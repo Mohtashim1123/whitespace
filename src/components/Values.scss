@@ -1,0 +1,40 @@
+@mixin responsive {
+  .intro {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin responsive-laptop {
+  .intro {
+    padding: 0 10rem 5rem;
+  }
+}
+
+
+.Values {
+  h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .intro {
+    padding: 0 25rem 5rem;
+  }
+
+
+  @media only screen and (max-width: 1400px) {
+    @include responsive-laptop;
+  }
+
+  @media only screen and (max-width: 650px) {
+    @include responsive;
+  }
+}

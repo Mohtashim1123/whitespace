@@ -1,0 +1,25 @@
+.contact-us {
+  background-color: #195586;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+
+  .whatsapp {
+    a {
+      color: #25D366 !important;
+    }
+  }
+  .linkedin {
+    background-color: white;
+    border-radius: 15%;
+    margin-left: 0.5rem;
+    a {
+      color:  #0077b5 !important;
+    }
+  }
+
+}

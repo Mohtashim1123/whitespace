@@ -1,0 +1,44 @@
+.Services {
+  .head-services {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .head {
+      padding-top: 1rem;
+      height: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: "cera-light";
+    }
+
+    .icon{
+      font-size: 2rem;
+      color: white;
+      background-color: #7292af;
+      padding: 1rem;
+      margin: 1rem;
+      transform: rotate(45deg);
+      div {
+        transform: rotate(-45deg);
+      }  
+    }
+  }
+
+}

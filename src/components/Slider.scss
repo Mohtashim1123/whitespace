@@ -1,0 +1,71 @@
+@mixin responsive {
+  .info{
+    padding: 0 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+@mixin responsive-laptop {
+  .info{
+    padding: 0 1rem;
+    font-size: 0.7rem;
+  }
+}
+
+.slider {
+  margin-bottom: 40px;
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+
+    .image-cover {
+      background-color: #e0e2e7;
+      flex: 0.5;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .info {
+      height: 60vh;
+      background-color: #e0e2e7;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      padding: 0 10rem;
+      flex: 0.5;
+      color: #195586;
+
+      h1{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
+    }
+
+    .image {
+      display: block;
+      height: auto;
+      width: 100%;
+      margin-left: 5rem;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      @include responsive-laptop;
+    }
+  
+    @media only screen and (max-width: 650px) {
+      @include responsive;
+    }
+  }
+   
+}

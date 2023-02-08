@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "MTCORSVA";
+  src: local("MTCORSVA"),
+   url("../fonts/MTCORSVA.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cera-light";
+  src: local("cera-light"),
+   url("../fonts/cera/cera-light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "cera-black";
+  src: local("cera-black"),
+   url("../fonts/cera/cera-black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "cera-medium";
+  src: local("cera-medium"),
+   url("../fonts/cera/cera-medium.otf") format("truetype");
+}
+
+html *
+{
+   font-family: "cera-medium", Sans-serif;
+   h1 , a{
+      color: #195586;
+   }
+}
