@@ -5,11 +5,14 @@ import Home from "./homePage"
 import Services from "./services";
 
 
-const Index = () => (
-  <Router>
-    <Home path="/" />
-    <Services path="/services" />
-  </Router>
-);
+const Index = () => {
+
+  return (
+    <Router>
+      <Home path="/" />
+      <Services path="/services" />
+    </Router>
+  )
+};
 
 export default Index;

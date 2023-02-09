@@ -17,6 +17,21 @@ import Values from '../components/Values';
 import './index.scss';
 import '../fonts/MTCORSVA.ttf';
 import ContactUs from '../components/ContactUs';
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  offscreen: {
+    x: 2000
+  },
+  onscreen: {
+    x: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1
+    }
+  }
+};
 
 const Home = () => (
   <Layout>
@@ -46,17 +61,19 @@ const Home = () => (
         </section>
       </div>
 
-      <div>
-        <div style={{ height: 85 }} id="values" />
-        <section >
-          <Values />
-        </section>
-      </div>
 
       <div>
         <div style={{ height: 85 }} id="contact-us" />
         <section >
-          <ContactUs />
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+          >
+            <motion.div variants={cardVariants}>
+              <ContactUs />
+            </motion.div>
+          </motion.div>
         </section>
       </div>
     </div>
