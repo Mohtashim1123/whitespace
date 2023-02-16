@@ -13,7 +13,7 @@ import { MdBusinessCenter } from "react-icons/md";
 export const services = [
   {
     id: 1,
-    heading: "Business valuation",
+    heading: "Business Valuation",
     info: `
       Our business valuation service helps businesses and organizations determine the value of their company or assets. 
       We use a variety of techniques and tools to conduct our analysis, 
@@ -27,7 +27,7 @@ export const services = [
   },
   {
     id: 2,
-    heading: "Feasibility studies",
+    heading: "Feasibility Studies",
     info: `
     Our feasibility study service helps businesses and organizations determine the feasibility of a proposed project, 
     product, or service. 
@@ -37,7 +37,7 @@ export const services = [
     img: HR,
     icon: BsPeopleFill,
     slide: true,
-    link: "services/#feasibility"
+    link: "services/#services1"
 
   },
   {
@@ -59,90 +59,90 @@ export const services = [
     link: "services/#diligences"
 
   },
-  {
-    id: 4,
-    heading: "HR / Recruitment",
-    info: (
-      <>
-        <div>
-          Our human resource and
-          recruitment consultancy services
-          support organizations in
-          attracting, retaining, and
-          developing top talent. We offer a
-          range of services designed to
-          support your HR needs, including
-          employee retention strategies,
-          job searches, onboarding, and
-          talent development. Our team
-          has a deep understanding of the
-          latest trends and best practices
-          in HR and is dedicated to helping
-          our clients succeed.
-        </div>
-      </>
-    ),
-    img: IT,
-    icon: RiUser2Fill,
-    link: "services/#hr"
+  // {
+  //   id: 4,
+  //   heading: "HR / Recruitment",
+  //   info: (
+  //     <>
+  //       <div>
+  //         Our human resource and
+  //         recruitment consultancy services
+  //         support organizations in
+  //         attracting, retaining, and
+  //         developing top talent. We offer a
+  //         range of services designed to
+  //         support your HR needs, including
+  //         employee retention strategies,
+  //         job searches, onboarding, and
+  //         talent development. Our team
+  //         has a deep understanding of the
+  //         latest trends and best practices
+  //         in HR and is dedicated to helping
+  //         our clients succeed.
+  //       </div>
+  //     </>
+  //   ),
+  //   img: IT,
+  //   icon: RiUser2Fill,
+  //   link: "services/#hr"
 
-  },
-  {
-    id: 5,
-    heading: "IT Consultancy",
-    info: (
-      <>
-        <div>
-          Our information technology
-          consultancy services help clients
-          leverage the latest technology to
-          drive efficiency and growth
+  // },
+  // {
+  //   id: 5,
+  //   heading: "IT Consultancy",
+  //   info: (
+  //     <>
+  //       <div>
+  //         Our information technology
+  //         consultancy services help clients
+  //         leverage the latest technology to
+  //         drive efficiency and growth
 
-          . We offer
-          a range of services designed to
-          optimize your IT infrastructure and
-          adopt new software solutions,
-          including system design and
-          implementation, data analysis, and
-          training
+  //         . We offer
+  //         a range of services designed to
+  //         optimize your IT infrastructure and
+  //         adopt new software solutions,
+  //         including system design and
+  //         implementation, data analysis, and
+  //         training
 
-          . Our team has
+  //         . Our team has
 
-          a deep
-          understanding of the latest
-          technology trends and is dedicated
-          to helping our clients succeed
-        </div>
-      </>
-    ),
-    img: IT,
-    icon: RiComputerFill,
-    link: "services/#it"
-  },
-  {
-    id: 5,
-    heading: "Project Management",
-    info: (
-      <>
-        <div>
-          Our project management
-          services help organizations plan,
-          execute, and deliver projects on
-          time and on budget. Our team
-          has the skills and experience to
-          ensure that your projects are
-          successful, and we offer a range
-          of services designed to support
-          your project management
-          needs, including project
-          planning, risk assessment,
-          resource allocation, and
-          stakeholder management.
-        </div>
-      </>
-    ),
-    img: IT,
-    icon: RiProjector2Fill,
-    link: "services/#project"
-  }
+  //         a deep
+  //         understanding of the latest
+  //         technology trends and is dedicated
+  //         to helping our clients succeed
+  //       </div>
+  //     </>
+  //   ),
+  //   img: IT,
+  //   icon: RiComputerFill,
+  //   link: "services/#it"
+  // },
+  // {
+  //   id: 5,
+  //   heading: "Project Management",
+  //   info: (
+  //     <>
+  //       <div>
+  //         Our project management
+  //         services help organizations plan,
+  //         execute, and deliver projects on
+  //         time and on budget. Our team
+  //         has the skills and experience to
+  //         ensure that your projects are
+  //         successful, and we offer a range
+  //         of services designed to support
+  //         your project management
+  //         needs, including project
+  //         planning, risk assessment,
+  //         resource allocation, and
+  //         stakeholder management.
+  //       </div>
+  //     </>
+  //   ),
+  //   img: IT,
+  //   icon: RiProjector2Fill,
+  //   link: "services/#project"
+  // }
 ] 

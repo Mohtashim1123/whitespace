@@ -10,7 +10,7 @@ import './services.scss';
 const Sections = ({ mainHeading, heading, intro, primary, secondary, id }) => (
   <>
     <div className='intro' id={id}>
-      {mainHeading && <h1 className="text-center text-3xl font-semibold">{mainHeading}</h1>}
+      {mainHeading && <h1 className="text-center text-4xl font-semibold">{mainHeading}</h1>}
       {heading && <h3 className="text-center text-3xl font-semibold">{heading}</h3>}
       <p>
         {intro}
@@ -79,7 +79,7 @@ const Services = () => {
         />
 
         <Sections
-          id="feasibility"
+          id="services1"
           heading={'Feasibility Studies'}
           intro={`
         Our feasibility study service helps businesses and organizations determine the feasibility of a proposed project, product, or
@@ -377,7 +377,7 @@ detailed report outlining our findings and recommendations.
 
 
         <Sections
-          heading={'Corporate fraud investigation, investigative reviews, transaction testing and support services'}
+          heading={'Corporate Fraud Investigation, Investigative Reviews, Transaction Testing And Support Services'}
           intro={`Our fraud risk management service helps businesses and organizations identify
         and mitigate the risk of fraud. We conduct a thorough analysis of a company's
         operations and systems to identify vulnerabilities and recommend controls and
@@ -438,7 +438,7 @@ detailed report outlining our findings and recommendations.
         />
 
         <Sections
-          heading={'Business process re-engineering'}
+          heading={'Business Process Re-engineering'}
           intro={`Our business process re-engineering service helps businesses and organizations redesign their processes to achieve significant
         improvements in performance, efficiency, and effectiveness. We conduct a thorough analysis of a company's operations and
         systems to identify opportunities to streamline processes and improve the flow of work. Our team of experienced consultants
@@ -728,7 +728,7 @@ to helping our clients succeed
 
         />
 
-        <Sections
+        {/* <Sections
           id="project"
           mainHeading={'Other Business Support Services'}
           intro={`
@@ -747,7 +747,7 @@ a one
 .
         `}
 
-        />
+        /> */}
 
 
       </div>

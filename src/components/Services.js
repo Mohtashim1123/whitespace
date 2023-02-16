@@ -31,7 +31,7 @@ const Services = () => (
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div variants={cardVariants}>
         <div className="flex flex-wrap">
