@@ -3,7 +3,20 @@ import VisionImage from '../assets/vision.jpeg';
 import { motion, Variants } from "framer-motion";
 
 
-const cardVariants = {
+const cardVariantsRight = {
+  offscreen: {
+    x: 2000
+  },
+  onscreen: {
+    x: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1
+    }
+  }
+};
+const cardVariantsLeft = {
   offscreen: {
     x: -2000
   },
@@ -24,7 +37,7 @@ const Vision = () => (
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
-      <motion.div variants={cardVariants} style={{ width: '600px' }}>
+      <motion.div variants={cardVariantsRight} style={{ width: '600px' }}>
         <div className='content'>
           <h1>
             Our Vision
@@ -58,7 +71,7 @@ const Vision = () => (
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
-      <motion.div variants={cardVariants} style={{ width: '600px' }}>
+      <motion.div variants={cardVariantsLeft} style={{ width: '600px' }}>
 
         <img src={VisionImage} />
       </motion.div>

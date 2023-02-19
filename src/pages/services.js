@@ -7,9 +7,9 @@ import SplitSection from '../components/SplitSection';
 
 import './services.scss';
 
-const Sections = ({ mainHeading, heading, intro, primary, secondary, id }) => (
+const Sections = ({ mainHeading, heading, intro, primary, secondary }) => (
   <>
-    <div className='intro' id={id}>
+    <div className='intro'>
       {mainHeading && <h1 className="text-center text-4xl font-semibold">{mainHeading}</h1>}
       {heading && <h3 className="text-center text-3xl font-semibold">{heading}</h3>}
       <p>
@@ -74,6 +74,7 @@ const Services = () => {
                   delivering results that drive tangible value
                 </p>
               </div>
+              <div id='services1'/>
             </div>
           }
         />
@@ -114,11 +115,11 @@ const Services = () => {
                   delivering results that drive tangible value
                 </p>
               </div>
+              <div id='business-eval'/>
             </div>
           }
         />
         <Sections
-          id="business-eval"
           heading={'Business Valuation'}
           intro={`
         Our business valuation service helps businesses and organizations determine the value of their company or assets. We use
@@ -171,6 +172,7 @@ outlining our findings and recommendations.
 
                 </p>
               </div>
+              <div id='diligences'/>
             </div>
           }
         />
@@ -238,6 +240,7 @@ detailed report outlining our findings and recommendations.
                   about your next steps.
                 </p>
               </div>
+              <div id='Financial-Modeling'/>
             </div>
           }
         />
@@ -303,6 +306,7 @@ detailed report outlining our findings and recommendations.
                   your business or project.
                 </p>
               </div>
+              <div id='Financial-Planning'/>
             </div>
           }
         />
@@ -371,6 +375,7 @@ detailed report outlining our findings and recommendations.
                   achieve your goals.
                 </p>
               </div>
+              <div id='Corporate-Fraud'/>
             </div>
           }
         />
@@ -433,6 +438,7 @@ detailed report outlining our findings and recommendations.
                   protect your business and achieve your goals.
                 </p>
               </div>
+              <div id='Business-Process'/>
             </div>
           }
         />
@@ -498,6 +504,7 @@ detailed report outlining our findings and recommendations.
                   achieve your goals.
                 </p>
               </div>
+              <div id='Risk-Advisory'/>
             </div>
           }
         />
@@ -569,6 +576,7 @@ detailed report outlining our findings and recommendations.
                   challenges that may arise.
                 </p>
               </div>
+              <div id='Operational-Improvement'/>
             </div>
           }
         />
@@ -651,6 +659,7 @@ detailed report outlining our findings and recommendations.
                   long-term success.
                 </p>
               </div>
+              <div id='hr'/>
             </div>
           }
         />
@@ -658,7 +667,11 @@ detailed report outlining our findings and recommendations.
         <Sections
           id="hr"
           mainHeading={'HR / Recruitment and Consultancy'}
-          intro={`
+          intro={
+            <div>
+              <div className="mt-8">
+
+            <p>
         Our human resource and
                 recruitment consultancy services
                 support organizations in
@@ -673,7 +686,11 @@ detailed report outlining our findings and recommendations.
                 latest trends and best practices
                 in HR and is dedicated to helping
                 our clients succeed.
-        `}
+        </p>
+        </div>
+        <div id='it'/>
+        </div>
+        }
 
         />
 
@@ -681,7 +698,11 @@ detailed report outlining our findings and recommendations.
         <Sections
           id="it"
           mainHeading={'IT Consultancy'}
-          intro={`
+          intro={
+            <div>
+              <p>
+
+           
         Our information technology
 consultancy services help clients
 leverage the latest technology to
@@ -701,7 +722,10 @@ a deep
 understanding of the latest
 technology trends and is dedicated
 to helping our clients succeed
-        `}
+        </p>
+        <div id='project'/>
+        </div>
+        }
 
         />
 
